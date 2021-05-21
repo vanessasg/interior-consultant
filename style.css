@@ -16,6 +16,9 @@ body {
   width: 93%;
   max-width: 1000px;
   margin: 20px auto;
+
+  position: relative;
+  padding-bottom: 3em;
 }
 
 .header {
@@ -150,4 +153,72 @@ span {
 }
 img {
   width: 100%;
+}
+
+/* card */
+.card {
+  width: 85%;
+  max-width: 410px;
+  background-color: #181719;
+  align-self:flex-end;
+
+  position: relative;
+  top: -50px;
+  right: 3%;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card-content {
+  width: 85%;
+  margin: 0 auto;
+}
+.profile-head {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.profile-img img {
+  border-radius: 50%;
+  width: 38px;
+  margin-right: 17px;
+}
+.profile-name {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.6em;
+  line-height: 16px;
+
+  align-self: center;
+}
+.profile-name p {
+  font-weight: 400;
+  color: #828282;
+}
+
+.profile-description {
+  font-family: "Lora", serif;
+  font-style: normal;
+  font-size: 0.55em;
+  line-height: 23px;
+  padding-bottom: 25px;
+
+  width: 80%;
+  position: relative;
+}
+
+/* -- FOOTER -- */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1.5em;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  color: #bdbdbd;
+}
+a {
+  text-decoration: none;
+  color: #333333;
 }
