@@ -23,7 +23,7 @@
                     <div class="bar3"></div>
                 </div>
                 <div id='items' class="menu-items">
-                    <a href="#">
+                    <a href="#" onclick="">
                         <p class="home">Home</p>
                     </a>
                     <a href="#">Collection</a>
@@ -33,7 +33,7 @@
             </div>
         </div>
 
-        <div class="main">
+        <div class="main" id="main">
 
             <div class="description">
                 <h1>Modern interior</h1>
@@ -44,31 +44,35 @@
                     </span></a>
             </div>
 
-            <div class="image">
-                <img src="photo1.png" alt="Interior picture">
-            </div>
+            <div class="main-right">
+                <div class="image">
+                    <img src="photo1.png" alt="Interior picture">
+                </div>
 
-            <div class="card">
-                <div class="card-content">
-                    <div class="profile-head">
-                        <div class="profile-img">
-                            <img src="photo2.png" alt="Aliza Webber photo profile">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="profile-head">
+                            <div class="profile-img">
+                                <img src="photo2.png" alt="Aliza Webber photo profile">
+                            </div>
+                            <div class="profile-name">
+                                <h3>Aliza Webber</h3>
+                                <p>Interior designer</p>
+                            </div>
                         </div>
-                        <div class="profile-name">
-                            <h3>Aliza Webber</h3>
-                            <p>Interior designer</p>
-                        </div>
-                    </div>
 
-                    <div class="profile-description">
-                        <h1>Designed in 2020 by Aliza Webber</h1>
+                        <div class="profile-description">
+                            <h1>Designed in 2020 by Aliza Webber</h1>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>  <!-- end main -->
+
+
+        </div> <!-- end main -->
 
         <div class="footer">
-            created by <a href="">vanessasg</a>
+            created by <a href="https://github.com/vanessasg">vanessasg</a>
         </div>
     </div>
 
@@ -79,6 +83,7 @@
         }
         function showMenu() {
             document.getElementById('items').classList.toggle('show');
+            document.getElementById('main').classList.toggle('hide-main');
         }
     </script>
 </body>

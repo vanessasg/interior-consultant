@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   width: 100vw;
   height: 100%;
@@ -14,19 +13,19 @@ body {
 
 .container {
   width: 93%;
-  max-width: 1000px;
+  max-width: 1299px;
   margin: 20px auto;
 
   position: relative;
   padding-bottom: 3em;
 }
 
+/* header -> logo + nav */
 .header {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
 }
-
 .rectangle {
   height: 16px;
   position: absolute;
@@ -44,7 +43,6 @@ body {
 }
 
 /* mobile nav */
-
 .nav {
   width: 100%;
   display: flex;
@@ -63,15 +61,18 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
+  height: 30px;
   line-height: 30px;
   text-align: center;
   padding: 20px;
 }
 .home {
+  /* first link */
   display: inline;
   padding: 8px 0;
   border-bottom: 2px solid #fff;
 }
+/* menu after click */
 .show {
   display: block;
   height: 90vh;
@@ -80,7 +81,7 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
+/* burger menu */
 .menu-icon {
   position: absolute;
 }
@@ -93,7 +94,7 @@ body {
   margin: 6px 0;
   transition: 0.4s;
 }
-
+/* menu X */
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-8px, 5px);
   transform: rotate(-45deg) translate(-8px, 5px);
@@ -112,7 +113,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+.hide-main {
+  /* if menu is open */
+  display: none;
+}
+/* main left */
 .description {
   margin-bottom: 30px;
 }
@@ -145,27 +150,32 @@ body {
 
   display: inline-block;
 }
-
+/*icon*/
 span {
   position: relative;
   top: 8px;
   left: 10px;
 }
+
+/* main right */
+
+.main-right {
+  display: flex;
+  flex-direction: column;
+}
 img {
   width: 100%;
 }
-
 /* card */
 .card {
   width: 85%;
   max-width: 410px;
   background-color: #181719;
-  align-self:flex-end;
+  align-self: flex-end;
 
   position: relative;
   top: -50px;
-  right: 3%;
-
+  right: 2%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .card-content {
@@ -220,5 +230,75 @@ img {
 }
 a {
   text-decoration: none;
-  color: #333333;
+  color: #ced4da;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-bottom: 5em;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .menu-items {
+    display: block;
+    margin-top: 0;
+  }
+  .menu-items a {
+    margin-left: 10px;
+  }
+  .header {
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .main {
+    margin-top: 170px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .main-right {
+    width: 57%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description {
+    width: 40%;
+    margin-right: 20px;
+  }
+  .description h1 {
+    font-size: 48px;
+    line-height: 61px;
+  }
+  .description p {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .description a {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .card {
+    right: 5%;
+  }
+  .profile-head {
+    margin-top: 10px;
+  }
+  .profile-img img {
+    width: 48px;
+  }
+  .profile-name {
+    font-size: 0.75em;
+    line-height: 25px;
+  }
+  .profile-name p {
+    font-size: 1.1em;
+  }
+  .profile-description {
+    width: 65%;
+    font-size: 0.7em;
+    line-height: 30px;
+  }
 }
